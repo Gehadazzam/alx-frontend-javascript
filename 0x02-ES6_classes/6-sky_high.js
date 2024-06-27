@@ -8,7 +8,9 @@ class SkyHighBuilding extends Building {
 // Each attribute must be stored in an “underscore” attribute version(ex: name is stored in _name)
   constructor(sqft, floors) {
     super(sqft);
-    if (floors !== Number) throw new Error();
+    if (typeof floors !== 'number') {
+      throw new TypeError('Floors must be a number');
+    }
     this._floors = floors;
   }
 
