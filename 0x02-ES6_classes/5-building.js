@@ -7,16 +7,6 @@ class Building {
         );
       }
     }
-    this.sqft = sqft;
-  }
-
-  /**
-   * @param {Number} sqft
-   */
-  set sqft(sqft) {
-    if (typeof sqft !== 'number') {
-      throw new TypeError('sqft nust be a number');
-    }
     this._sqft = sqft;
   }
 
