@@ -4,6 +4,12 @@ class Currency {
 //   name(String)
 // Each attribute must be stored in an “underscore” attribute version(ex: name is stored in _name)
   constructor(code, name) {
+    if (typeof code !== 'string') {
+      throw new TypeError('Code must be a string');
+    }
+    if (typeof name !== 'string') {
+      throw new TypeError('Name must be a string');
+    }
     this._name = name;
     this._code = code;
   }
