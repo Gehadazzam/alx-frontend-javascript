@@ -34,7 +34,7 @@ class Currency {
   // Implement a method named displayFullCurrency that will return the attributes
   // in the following format name(code).
   displayFullCurrency() {
-    return `${this._name}(${this._code})`;
+    return `${this._name} (${this._code})`;
   }
 }
 export default Currency;
